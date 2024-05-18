@@ -23,6 +23,8 @@ export const Nav = styled.nav`
     a{
         color: ${CorLetra};
     }
+
+    
 `
 
 export const TituloSite = styled.div`
@@ -72,3 +74,28 @@ export const MainWrapper = styled.main`
 `
 
 // Fim inicio
+
+// Peges 
+
+export const SectionWrapper = styled.section`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+    gap: 12px;
+    justify-content: center;
+`
+
+export const Imagens = styled.img`
+    width: 225px;
+    height: 225px;
+    border-radius: 12px;
+
+    &:hover{
+        filter: grayscale(100%);
+        cursor: pointer;
+    }
+`
+
+// Fim Pages

@@ -1,5 +1,5 @@
-import Navbar from "./components/Navbar"
-import { MainWrapper } from "../Estilo"
+import Navbar from "../components/navbar"
+import { MainWrapper } from "../components/estilo"
 
 function Inicio() {
     return (

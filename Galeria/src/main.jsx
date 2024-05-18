@@ -5,12 +5,35 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Inicio from './routes/inicio';
+import KennyPage from './routes/kenny';
+import CartmanPage from './routes/cartman';
+import ButtersPage from './routes/butters';
+import KylePage from './routes/kyle';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Inicio/>,
-  },
+    children: [
+      {
+        path: "/Kenny",
+        element: <KennyPage/>,
+      },
+      {
+        path: "/Cartman",
+        element: <CartmanPage/>,
+      },
+      {
+        path: "/Butters",
+        element: <ButtersPage/>,
+      },
+      {
+        path: "/Kyle",
+        element: <KylePage/>,
+      },
+    ]
+  },      
+
 ]);
 
 
